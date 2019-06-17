@@ -24,9 +24,9 @@ def play(songs)
   input = gets.chomp
   songs.each_with_index do |song_name, index|
     new_index = index + 1
-    if input == "#{song_name}"
+    if input == song_name
       puts "Playing #{song_name}"
-      elsif input == "#{new_index}"
+      elsif input == new_index
       puts "Playing #{song_name}"
     else 
       puts "Invalid input, please try again"
